@@ -1,0 +1,11 @@
+{
+    "extends": ["github>whitesource/merge-confidence:beta"],
+    "packageRules": [
+      {
+        "datasources": ["maven", "npm", "pypi"],
+        "updateTypes": ["patch", "minor", "major"],
+        "prBodyColumns": ["Package", "Change", "Age", "Confidence"]
+      }
+    ]
+  }
+  
